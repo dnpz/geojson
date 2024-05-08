@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c48688db18f4aa6c8c3422e67f0f875d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c48688db18f4aa6c8c3422e67f0f875d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c48688db18f4aa6c8c3422e67f0f875d = L.map(
+                "map_c48688db18f4aa6c8c3422e67f0f875d",
+                {
+                    center: [-8.765, -63.845],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e4d9ba612bccc5903bdcb60186ae84a7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e4d9ba612bccc5903bdcb60186ae84a7.addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            var poly_line_c071d46985552f6f84b561bfa1f710ec = L.polyline(
+                [[-9.77114690928791, -66.3578724119743], [-9.77632228278428, -66.3586056190644]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_c071d46985552f6f84b561bfa1f710ec.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO EXTREMA - RUA CASTELO BRANCO , Ref: S09.06.C, Convênio: 912903/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_28c42443f535479408abaaf7a70b34fa = L.polyline(
+                [[-9.77963001009443, -66.3556308417826], [-9.77957710366256, -66.3515604229689]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_28c42443f535479408abaaf7a70b34fa.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO EXTREMA - RUA SÃO JOSÉ , Ref: S09.27.P, Convênio: INDICAÇÃO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bbf4f460a2d46e3daccd0b656d5095f5 = L.polyline(
+                [[-9.77759887777088, -66.3557522080988], [-9.77631602905799, -66.358631321717]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_bbf4f460a2d46e3daccd0b656d5095f5.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO EXTREMA - RUA ABUNÃ, Ref: S09.27.P, Convênio: INDICAÇÃO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_38ec448fcff3c883b07ccc731997f260 = L.polyline(
+                [[-9.78031779294249, -66.3556357223807], [-9.78028412528375, -66.3541324981665]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_38ec448fcff3c883b07ccc731997f260.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO EXTREMA - RUA ALVORADA, Ref: S09.27.P, Convênio: INDICAÇÃO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0c561cafabc4a734e3b4b7db436ffc76 = L.polyline(
+                [[-9.78101038788107, -66.3556406963669], [-9.78098786676747, -66.3540752452355]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_0c561cafabc4a734e3b4b7db436ffc76.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO EXTREMA - RUA JOÃO BATISTA , Ref: S09.27.P, Convênio: INDICAÇÃO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b5298d8cf523fdd3a9ac3e23e74b143a = L.polyline(
+                [[-9.77960176993552, -66.354154449709], [-9.78097733432533, -66.3540958825318]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_b5298d8cf523fdd3a9ac3e23e74b143a.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO EXTREMA - RUA PRESIDENTE DUTRA, Ref: S09.27.P, Convênio: INDICAÇÃO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ff5e0c1b115df4f7b597b5d90e5f257a = L.polyline(
+                [[-9.78102727871525, -66.3556406963669], [-9.77116517083707, -66.3560684746448]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_ff5e0c1b115df4f7b597b5d90e5f257a.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO EXTREMA - RUA CAMPO GRANDE , Ref: S09.27.P, Convênio: INDICAÇÃO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8477e16161dc4794a64b3dcec8ff9b14 = L.polyline(
+                [[-9.77052569011204, -66.6169194419937], [-9.76572554858201, -66.6143299264474]],
+                {"bubblingMouseEvents": true, "color": "#7e008f", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#7e008f", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_8477e16161dc4794a64b3dcec8ff9b14.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO NOVA CALIFÓRNIA - RUA JAGUARÉ, Ref: S09.27.P, Convênio: INDICAÇÃO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_166fe6d2ef55177daffeef1026a95e7f = L.polyline(
+                [[-9.7656531239094, -66.6142840455826], [-9.76360371230157, -66.618110817792]],
+                {"bubblingMouseEvents": true, "color": "#7e008f", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#7e008f", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_166fe6d2ef55177daffeef1026a95e7f.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO NOVA CALIFÓRNIA - RUA BELO HORIZONTE, Ref: S09.27.P, Convênio: INDICAÇÃO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a0053af18302a3ea2d260887b7f4e664 = L.polyline(
+                [[-8.73725496647787, -63.8400962060565], [-8.73827583390466, -63.8425501263768]],
+                {"bubblingMouseEvents": true, "color": "#1300a8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1300a8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_a0053af18302a3ea2d260887b7f4e664.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO PLANALTO - RUA COTIA , Ref: S09.08.C, Convênio: 929291/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7ceacd75b5f3ddb991a925935582cb15 = L.polyline(
+                [[-8.73569656573585, -63.8423879976546], [-8.73586058104681, -63.8443890429559]],
+                {"bubblingMouseEvents": true, "color": "#1300a8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1300a8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_7ceacd75b5f3ddb991a925935582cb15.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO PLANALTO - RUA LAGES , Ref: S09.08.C, Convênio: 929291/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_43b8b0648ce75c0fb06bfccbbde023a8 = L.polyline(
+                [[-8.73925182268546, -63.8423489528885], [-8.73573998159058, -63.8431103262271]],
+                {"bubblingMouseEvents": true, "color": "#1300a8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1300a8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_43b8b0648ce75c0fb06bfccbbde023a8.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO PLANALTO - RUA NOVA CANAÃ, Ref: S09.08.C, Convênio: 929291/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_96f33a8d16a44bff1c6adee455d8b502 = L.polyline(
+                [[-8.78200736456497, -63.8491490719255], [-8.77704374396155, -63.8502213873072]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_96f33a8d16a44bff1c6adee455d8b502.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - RUA MARECHAL TAUMATURGO, Ref: S09.17.C, Convênio: 929972/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d18d039eba7529db03575a49c9a9a5aa = L.polyline(
+                [[-8.77494734380702, -63.8457225956444], [-8.77846839526382, -63.8478086947949]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_d18d039eba7529db03575a49c9a9a5aa.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - RUA PONTA NEGRA , Ref: S09.13.C, Convênio: 898339/2020
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_34662152138c5b88b58b9dd906583766 = L.polyline(
+                [[-8.76984127283951, -63.8486499075836], [-8.77239877744813, -63.8489166429145]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_34662152138c5b88b58b9dd906583766.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - R. CORUMBÁ; , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e527cc663163d9857b596583bcf03674 = L.polyline(
+                [[-8.76963393133093, -63.8481870254267], [-8.77276137868466, -63.8483121026784]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_e527cc663163d9857b596583bcf03674.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - R. HENRIQUE VALENTE; , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f06ac80a82858daed864ffec957f8015 = L.polyline(
+                [[-8.76944438821627, -63.8475116081367], [-8.77305393170498, -63.8476742085804]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_f06ac80a82858daed864ffec957f8015.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - R. ADONIRAN BARBOSA; , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7146508c01ec7a0ac04c56021ec15711 = L.polyline(
+                [[-8.76930429107544, -63.8468987294534], [-8.77336708679803, -63.847111360797]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_7146508c01ec7a0ac04c56021ec15711.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - R. QUINCAS BORBAS; , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4e4e6801cc7faacf9a78571b64f1fad2 = L.polyline(
+                [[-8.77135629690478, -63.848541410955], [-8.7713727788333, -63.8457980494879]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_4e4e6801cc7faacf9a78571b64f1fad2.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - R. RODRIGUES ALVES; , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4d52d5cf32322df7ac9715340e95cfa5 = L.polyline(
+                [[-8.77216662532024, -63.8495188395375], [-8.77370246864419, -63.846507917106]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_4d52d5cf32322df7ac9715340e95cfa5.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - R. CLEMENTINA DE JESUS; , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d1ae8558225d466c8240529b1672f035 = L.polyline(
+                [[-8.77453746728792, -63.8508331838962], [-8.77562511001766, -63.8488173364342]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_d1ae8558225d466c8240529b1672f035.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - R. VASCO DA GAMA; , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b5d6fab6a7c98db327c8388b4796bb96 = L.polyline(
+                [[-8.79084121893678, -63.8486859769791], [-8.78133697056246, -63.8457448756748]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_b5d6fab6a7c98db327c8388b4796bb96.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - RUA LIBERDADE, Ref: S09.13.C, Convênio:  899914/2020
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_229864029d3bcd6b0745b0902f8c0ffd = L.polyline(
+                [[-8.77533810617965, -63.8465234315088], [-8.77958613007642, -63.8468821459143]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_229864029d3bcd6b0745b0902f8c0ffd.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - RUA SALTO DO CÉU , Ref: S09.13.C, Convênio:  899914/2020
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bf2e9450606eea95fee4606ce64e9236 = L.polyline(
+                [[-8.77494478466487, -63.8456926404024], [-8.77890691242299, -63.846926201674]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_bf2e9450606eea95fee4606ce64e9236.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - RUA SERRA DOURADA , Ref: S09.13.C, Convênio:  899914/2020
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_93bde05651513c02221a64034cf01034 = L.polyline(
+                [[-8.78357858121384, -63.8559961942188], [-8.77998880275605, -63.8401046871398]],
+                {"bubblingMouseEvents": true, "color": "#0022dd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0022dd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_93bde05651513c02221a64034cf01034.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO TRES MARIAS - RUA CAPÃO DA CANOA , Ref: S09.13.C, Convênio:  899914/2020
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ba3ca9d75556cb12924589d834e812b4 = L.polyline(
+                [[-8.81537416456188, -63.8847125896009], [-8.81391005114472, -63.8858558529096]],
+                {"bubblingMouseEvents": true, "color": "#008fdd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008fdd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_ba3ca9d75556cb12924589d834e812b4.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO NOVO HORIZONTE - RUA MONTSERRAT, Ref: S09.13.C, Convênio:  899914/2020
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dceb90e93bba02989e5c7cfd712a2293 = L.polyline(
+                [[-8.81442442160388, -63.882841034372], [-8.81644217253378, -63.8871392104645]],
+                {"bubblingMouseEvents": true, "color": "#008fdd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008fdd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_dceb90e93bba02989e5c7cfd712a2293.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO NOVO HORIZONTE - RUA GENEBRA , Ref: S09.13.C, Convênio:  899914/2020
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1e8a46078a8beca1daa8943605de8568 = L.polyline(
+                [[-8.80174083909637, -63.8853891927491], [-8.80341206434342, -63.8841151212078]],
+                {"bubblingMouseEvents": true, "color": "#00aaa5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00aaa5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_1e8a46078a8beca1daa8943605de8568.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO CIDADE DO LOBO - RUA BERNARDO SIMÃO , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_98bee8c534c4239a0ef44eed1007d69b = L.polyline(
+                [[-8.80215090254347, -63.8858991087769], [-8.80376408138885, -63.8846866052555]],
+                {"bubblingMouseEvents": true, "color": "#00aaa5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00aaa5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_98bee8c534c4239a0ef44eed1007d69b.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO CIDADE DO LOBO - RUA GILBRATAR, Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_279914eb0ee61eed3a1ad1f90f285ccb = L.polyline(
+                [[-8.80253099980374, -63.8864008721839], [-8.80411570338404, -63.8851819323468]],
+                {"bubblingMouseEvents": true, "color": "#00aaa5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00aaa5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_279914eb0ee61eed3a1ad1f90f285ccb.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO CIDADE DO LOBO - RUA  SAMUEL DE FREITAS , Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_94427b3e73afc0d5e32b3efac9872847 = L.polyline(
+                [[-8.80286746094413, -63.8868686955952], [-8.80448298379721, -63.8856705479149]],
+                {"bubblingMouseEvents": true, "color": "#00aaa5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00aaa5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_94427b3e73afc0d5e32b3efac9872847.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO CIDADE DO LOBO - RUA GERALDO PÉRES, Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_808598a3cb7acbe96436a2722214540e = L.polyline(
+                [[-8.80180352297404, -63.8837702189561], [-8.80389769428878, -63.886548242054]],
+                {"bubblingMouseEvents": true, "color": "#00aaa5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00aaa5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_808598a3cb7acbe96436a2722214540e.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO CIDADE DO LOBO - RUA HUGO FERREIRA (TRECHO 01), Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bcda8c71bd2fba48b51a266c576609d4 = L.polyline(
+                [[-8.80506284087718, -63.8881716231015], [-8.8063409548538, -63.8894942652194]],
+                {"bubblingMouseEvents": true, "color": "#00aaa5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00aaa5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_bcda8c71bd2fba48b51a266c576609d4.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO CIDADE DO LOBO - RUA HUGO FERREIRA (TRECHO 02), Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9a1a175e0553344dd6df9d56029acc2b = L.polyline(
+                [[-8.80514573665514, -63.8891030319236], [-8.80638463159689, -63.8882375709107]],
+                {"bubblingMouseEvents": true, "color": "#00aaa5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00aaa5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_9a1a175e0553344dd6df9d56029acc2b.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO CIDADE DO LOBO - RUA CAP. SÍLVIO, Ref: S09.13.C, Convênio: 910971/2021
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_51151462f2c999f6459ce45eeecf6321 = L.polyline(
+                [[-8.74601666938752, -63.8287833438656], [-8.73551543891148, -63.8245385328753]],
+                {"bubblingMouseEvents": true, "color": "#00a03a", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00a03a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_51151462f2c999f6459ce45eeecf6321.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO RUA HUMAITÁ - RUA HUMAITÁ , Ref: S09.20.C, Convênio: 907648/2020
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9694a1214678ada1585130b14077acf3 = L.polyline(
+                [[-8.73565401115547, -63.8648102540189], [-8.72789877952805, -63.8567868848992]],
+                {"bubblingMouseEvents": true, "color": "#00bb00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00bb00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_9694a1214678ada1585130b14077acf3.bindTooltip(
+                `<div>
+                     TAC ESTRADA DA PENAL - TAC ESTRADA DA PENAL, Ref: S09.18.J, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ea1666e3ebed3765ffe408d99a25d311 = L.polyline(
+                [[-8.7802099399789, -63.8301747699546], [-8.77364052109352, -63.8316713138126]],
+                {"bubblingMouseEvents": true, "color": "#00ec00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00ec00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_ea1666e3ebed3765ffe408d99a25d311.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO RUA ITATIAIA E FARRAPOS - RUA FARRAPOS , Ref: S09.21.C, Convênio: 894058/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c70a98604e5f2ff7cf97be56f41e13f5 = L.polyline(
+                [[-8.77863948941604, -63.834109216104], [-8.77730058999347, -63.8278550512385]],
+                {"bubblingMouseEvents": true, "color": "#00ec00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00ec00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_c70a98604e5f2ff7cf97be56f41e13f5.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO RUA ITATIAIA E FARRAPOS - RUA ITATIAIA , Ref: S09.21.C, Convênio: 894058/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ffef4b0053db98501a73b114ecb89f06 = L.polyline(
+                [[-8.80026769230361, -63.8024903941294], [-8.78351051978591, -63.8019808528445]],
+                {"bubblingMouseEvents": true, "color": "#a0ff00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a0ff00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_ffef4b0053db98501a73b114ecb89f06.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO ESTRADA DOS PERIQUITOS - ESTRADA DO PERIQUITOS , Ref: S09.04.C, Convênio: 894493/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4c215ce086af333ad43275de37469cfc = L.polyline(
+                [[-8.722329806257619, -63.8494515414677], [-8.72370484670485, -63.8508761136548]],
+                {"bubblingMouseEvents": true, "color": "#f3e400", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f3e400", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_4c215ce086af333ad43275de37469cfc.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO APONIÃ E PLANALTO - RUA DAS ORQUÍDEAS, Ref: S09.30.P, Convênio: 882795/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_094ea5e0ade61bb1b584dba6a2c4a89e = L.polyline(
+                [[-8.72314293174925, -63.8503611274651], [-8.72090104568334, -63.8516110823911]],
+                {"bubblingMouseEvents": true, "color": "#f3e400", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f3e400", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_094ea5e0ade61bb1b584dba6a2c4a89e.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO APONIÃ E PLANALTO - RUA AZALÉIAS, Ref: S09.30.P, Convênio: 882795/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7188801df397ca98f1cd5ce5a2da86e3 = L.polyline(
+                [[-8.72287218569225, -63.8516331267663], [-8.7223029359612, -63.8508229474821]],
+                {"bubblingMouseEvents": true, "color": "#f3e400", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f3e400", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_7188801df397ca98f1cd5ce5a2da86e3.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO APONIÃ E PLANALTO - RUA DOS LÍRIOS, Ref: S09.30.P, Convênio: 882795/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ca5fd3223eaf4764f0f4a2f19f5f64b0 = L.polyline(
+                [[-8.73346749219789, -63.837857067525], [-8.73098536635391, -63.8381045249179]],
+                {"bubblingMouseEvents": true, "color": "#f3e400", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f3e400", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_ca5fd3223eaf4764f0f4a2f19f5f64b0.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO APONIÃ E PLANALTO - RUA SOLAR , Ref: S09.30.P, Convênio: 882795/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_03cc9bb8011452508882a32e05ab02f0 = L.polyline(
+                [[-8.733440315727, -63.8390485290465], [-8.73347655102109, -63.8378479024363]],
+                {"bubblingMouseEvents": true, "color": "#f3e400", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f3e400", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_03cc9bb8011452508882a32e05ab02f0.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO APONIÃ E PLANALTO - RUA NETURNO, Ref: S09.30.P, Convênio: 882795/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5c051327a93208ed1300f626159fca61 = L.polyline(
+                [[-8.73347655102109, -63.8390668592237], [-8.73123901500801, -63.8392868213508]],
+                {"bubblingMouseEvents": true, "color": "#f3e400", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f3e400", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_5c051327a93208ed1300f626159fca61.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO APONIÃ E PLANALTO - RUA PLUTÃO , Ref: S09.30.P, Convênio: 882795/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dfba1b1e82dbe1d54fbaa1311479766d = L.polyline(
+                [[-8.73347655102109, -63.8384527982857], [-8.72786003841864, -63.8395067834734]],
+                {"bubblingMouseEvents": true, "color": "#f3e400", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f3e400", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_dfba1b1e82dbe1d54fbaa1311479766d.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO APONIÃ E PLANALTO - RUA EDUARDO CAMPOS , Ref: S09.30.P, Convênio: 882795/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b28132be3bab345c135a1234376cfe0b = L.polyline(
+                [[-8.73122444595339, -63.839273778597], [-8.73099019039565, -63.8381063132406]],
+                {"bubblingMouseEvents": true, "color": "#f3e400", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f3e400", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_b28132be3bab345c135a1234376cfe0b.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO BAIRRO APONIÃ E PLANALTO - RUA PLANALTO , Ref: S09.30.P, Convênio: 882795/2019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f8e40ea74d9034a683ec89b69c773fd0 = L.polyline(
+                [[-8.77903462552776, -63.8105462091914], [-8.77585153155328, -63.8081193145472]],
+                {"bubblingMouseEvents": true, "color": "#ffa800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_f8e40ea74d9034a683ec89b69c773fd0.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO PARQUE AMAZÔNIA - RUA FREIJÓ, Ref: S09.03.C, Convênio: 929970/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7326dec7036bb9a208a25c68a304f1a6 = L.polyline(
+                [[-8.77929320572519, -63.8099868524269], [-8.77623492852921, -63.8077403957626]],
+                {"bubblingMouseEvents": true, "color": "#ffa800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_7326dec7036bb9a208a25c68a304f1a6.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO PARQUE AMAZÔNIA - RUA JACARANDA, Ref: S09.03.C, Convênio: 929970/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ca06c977cc0b693b1817858b3e6387ac = L.polyline(
+                [[-8.77879389047439, -63.8111145947223], [-8.77552163175602, -63.8086516035511]],
+                {"bubblingMouseEvents": true, "color": "#ffa800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_ca06c977cc0b693b1817858b3e6387ac.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO PARQUE AMAZÔNIA - RUA GUAJUVIRA, Ref: S09.03.C, Convênio: 929970/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_22f1196c5e33b2a68927569349240cc0 = L.polyline(
+                [[-8.77806273594681, -63.8129009279683], [-8.77440710130363, -63.8102123758871]],
+                {"bubblingMouseEvents": true, "color": "#ffa800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_22f1196c5e33b2a68927569349240cc0.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO PARQUE AMAZÔNIA - RUA BAKURI, Ref: S09.03.C, Convênio: 929970/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_495b2dfeab7edf1003cbd664da82e3ca = L.polyline(
+                [[-8.77785765649694, -63.8135324656744], [-8.77405936527237, -63.8106183566504]],
+                {"bubblingMouseEvents": true, "color": "#ffa800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_495b2dfeab7edf1003cbd664da82e3ca.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO PARQUE AMAZÔNIA - RUA PALHETEIRO, Ref: S09.03.C, Convênio: 929970/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5a202269b7cae083d7851034f50aa7a0 = L.polyline(
+                [[-8.77588718113917, -63.8120618628871], [-8.77806275203025, -63.8090846535447]],
+                {"bubblingMouseEvents": true, "color": "#ffa800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_5a202269b7cae083d7851034f50aa7a0.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO PARQUE AMAZÔNIA - RUA SERINGUEIRA, Ref: S09.03.C, Convênio: 929970/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_155e620959e21369b771fd77b76549aa = L.polyline(
+                [[-8.77489993394005, -63.8095277355302], [-8.77310048657187, -63.8119022852586]],
+                {"bubblingMouseEvents": true, "color": "#ffa800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_155e620959e21369b771fd77b76549aa.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO PARQUE AMAZÔNIA - RUA EÇA DE QUEIROZ (TUCUPI) 1, Ref: S09.03.C, Convênio: 929970/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5124c29f354c026d376a379864e08893 = L.polyline(
+                [[-8.77307799377847, -63.8118795258361], [-8.77360280054375, -63.8141782374551]],
+                {"bubblingMouseEvents": true, "color": "#ffa800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffa800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_5124c29f354c026d376a379864e08893.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO PARQUE AMAZÔNIA - RUA EÇA DE QUEIROZ (TUCUPI) 2, Ref: S09.03.C, Convênio: 929970/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1f0f2341a945a366256ba766b4a9e27d = L.polyline(
+                [[-9.70632302237919, -64.526660228946], [-9.71209307562162, -64.5295820364087]],
+                {"bubblingMouseEvents": true, "color": "#fa0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fa0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_1f0f2341a945a366256ba766b4a9e27d.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO UNIÃO BANDEIRANTES - RUA JOSÉ DA SILVA, Ref: S09.24.C, Convênio: 929569/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7146b65e9f9123b161f6ddebb18d9873 = L.polyline(
+                [[-9.70592244994486, -64.5274748636487], [-9.71279655148868, -64.5309737932967]],
+                {"bubblingMouseEvents": true, "color": "#fa0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fa0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_7146b65e9f9123b161f6ddebb18d9873.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO UNIÃO BANDEIRANTES - RUA MANAUS, Ref: S09.24.C, Convênio: 929569/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0e2e1e111c8c10d197a4fcded4b44173 = L.polyline(
+                [[-9.70661876488012, -64.5288413994061], [-9.71123058798873, -64.5312119584055]],
+                {"bubblingMouseEvents": true, "color": "#fa0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fa0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_0e2e1e111c8c10d197a4fcded4b44173.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO UNIÃO BANDEIRANTES - RUA VITÓRIA RÉGIA, Ref: S09.24.C, Convênio: 929569/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_95dc39d68fd67e6c1c1c7ce647d5c7e1 = L.polyline(
+                [[-9.70564778674857, -64.5306506983423], [-9.70691259607637, -64.5312274803503]],
+                {"bubblingMouseEvents": true, "color": "#fa0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fa0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_95dc39d68fd67e6c1c1c7ce647d5c7e1.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO UNIÃO BANDEIRANTES - RUA DR. ROBERVAL , Ref: S09.24.C, Convênio: 929569/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e8ed8ec5980e83affe481a0a208fccdb = L.polyline(
+                [[-9.71061524700581, -64.5297531379912], [-9.70976278396414, -64.5314297395641]],
+                {"bubblingMouseEvents": true, "color": "#fa0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fa0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_e8ed8ec5980e83affe481a0a208fccdb.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO UNIÃO BANDEIRANTES - RUA CHIQUILITO ERSE, Ref: S09.24.C, Convênio: 929569/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_58fa0e1fa1c28eb719e7484388c2a261 = L.polyline(
+                [[-9.71756774648471, -64.5314007763698], [-9.70510167615843, -64.5251336412357]],
+                {"bubblingMouseEvents": true, "color": "#fa0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fa0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_58fa0e1fa1c28eb719e7484388c2a261.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO UNIÃO BANDEIRANTES - AVENIDA 14 DE JULHO, Ref: S09.31.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4ab336815a2d96ef64f7988d48f52dbb = L.polyline(
+                [[-9.71345738490059, -64.5294541730996], [-9.70667245423796, -64.5259843442876]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_4ab336815a2d96ef64f7988d48f52dbb.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - AV 14 DE JULHO, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_177077c12ffdce136853c8d2aca605df = L.polyline(
+                [[-9.70486760624456, -64.5349544168986], [-9.70694760708805, -64.5312599545657]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_177077c12ffdce136853c8d2aca605df.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA AYRTON SENNA 1, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e413f82e4bbf37941633322db6109b4f = L.polyline(
+                [[-9.70748694634195, -64.5302031621187], [-9.70771855838009, -64.5266359011563]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_e413f82e4bbf37941633322db6109b4f.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA AYRTON SENNA 2, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_318d2d39dc2f8a36914704bada8a84ef = L.polyline(
+                [[-9.70515184040743, -64.5344282972838], [-9.70404407793635, -64.5338382077445]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_318d2d39dc2f8a36914704bada8a84ef.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA CEREJEIRAS, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_98b77551f7bf28c4a98ba4d42c44d462 = L.polyline(
+                [[-9.70661894944885, -64.5374269279558], [-9.71202705262111, -64.5268792239478]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_98b77551f7bf28c4a98ba4d42c44d462.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA CHIQUILITO ERSE, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c975a310db4db5644c7a7355d7b03e96 = L.polyline(
+                [[-9.70372955802804, -64.5343607648555], [-9.70603741778862, -64.5298418527801]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_c975a310db4db5644c7a7355d7b03e96.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA DAMASCO, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aa82e1cea0dff57224c37668b488facb = L.polyline(
+                [[-9.70370087416293, -64.5343868295685], [-9.70478906113671, -64.5349794579424]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_aa82e1cea0dff57224c37668b488facb.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA DOS MILAGRES, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7426373ecfc4f41ddf5c2b892ce25c72 = L.polyline(
+                [[-9.71139377213568, -64.533646014395], [-9.70566448980485, -64.5306451120483]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_7426373ecfc4f41ddf5c2b892ce25c72.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA DR. ROBERVAL 1, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c9cf4c1e09e9771c22d8f80becf7cb71 = L.polyline(
+                [[-9.7077417639769, -64.5350160068234], [-9.70434301757507, -64.5333120357924]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_c9cf4c1e09e9771c22d8f80becf7cb71.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA JARU, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_204e0a7dbdedf50e2725f21c760c9138 = L.polyline(
+                [[-9.7049520341787, -64.5321145580866], [-9.70951712274613, -64.5344455365636]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_204e0a7dbdedf50e2725f21c760c9138.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA JORGE TEIXEIRA, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8dcbb2509d57af0f46b30e9544bc15a0 = L.polyline(
+                [[-9.71321591176104, -64.5301719533618], [-9.70632888291773, -64.5266592757329]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_8dcbb2509d57af0f46b30e9544bc15a0.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA JOSE DA SILVA, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_db94143bbe7124ae10bb1217d1c1b4e2 = L.polyline(
+                [[-9.70674679362224, -64.5345122384814], [-9.70845208441134, -64.531061681023]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_db94143bbe7124ae10bb1217d1c1b4e2.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA MADRE CRISTINA, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_958962ba73c6343cb6e1891089ebf48d = L.polyline(
+                [[-9.71278162367718, -64.5309790871633], [-9.70594169460632, -64.5274807426289]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_958962ba73c6343cb6e1891089ebf48d.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA MANAUS, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_63257e75dfcc7972dc2d59cd7960579d = L.polyline(
+                [[-9.70661532946175, -64.5260135437233], [-9.70520681008343, -64.5289479408597]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_63257e75dfcc7972dc2d59cd7960579d.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA NIVALDO DE OLIVEIRA, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a177844c9b28b3164e08d7fa7ab39778 = L.polyline(
+                [[-9.70922336432412, -64.5350697934623], [-9.70464340943787, -64.5326136046577]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_a177844c9b28b3164e08d7fa7ab39778.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA PORTO VELHO, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7853268fb0fc4e91656e64c0e49c2f6d = L.polyline(
+                [[-9.71353827846043, -64.5295282262378], [-9.71200529650694, -64.5325664220113]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_7853268fb0fc4e91656e64c0e49c2f6d.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA REI PELÉ, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_715d87fdb86de3590771fb6e6fb1dbe3 = L.polyline(
+                [[-9.70524301231559, -64.5315344354399], [-9.71106360563971, -64.5343858142163]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_715d87fdb86de3590771fb6e6fb1dbe3.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA THIAGO PATRICIO, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c5d9845049ceb22bd345a6b2286c421b = L.polyline(
+                [[-9.70663517716223, -64.5288160302344], [-9.71122683060929, -64.5312191186696]],
+                {"bubblingMouseEvents": true, "color": "#d30000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d30000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_c5d9845049ceb22bd345a6b2286c421b.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO TCHAU POEIRA - UNIÃO BANDEIRANTES - RUA VITÓRIA RÉGIA, Ref: S09.01.P, Convênio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_71552bf851ca978293c76ee386f7981e = L.polyline(
+                [[-9.65750069175484, -65.7300376608903], [-9.65710099048108, -65.7280312183641]],
+                {"bubblingMouseEvents": true, "color": "#cccccc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#cccccc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_71552bf851ca978293c76ee386f7981e.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO VISTA ALEGRE DO ABUNÃ - RUA DA BEIRA, Ref: S09.23.C, Convênio: 929570/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6d0d9fbd8fda025a1c4d3fe334c5230c = L.polyline(
+                [[-9.65655780593829, -65.7301104334171], [-9.65642457186, -65.7280831987404]],
+                {"bubblingMouseEvents": true, "color": "#cccccc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#cccccc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_6d0d9fbd8fda025a1c4d3fe334c5230c.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO VISTA ALEGRE DO ABUNÃ - RUA ANTÕNIO OLIMPIO DE LIMA , Ref: S09.23.C, Convênio: 929570/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_457ed1a5798fe09bbafde46a89b3b02d = L.polyline(
+                [[-9.65570715668621, -65.7301208294924], [-9.65550218064156, -65.7281559712673]],
+                {"bubblingMouseEvents": true, "color": "#cccccc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#cccccc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_457ed1a5798fe09bbafde46a89b3b02d.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO VISTA ALEGRE DO ABUNÃ - RUA LUIZ ANTÔNIO MIOTO, Ref: S09.23.C, Convênio: 929570/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_296b753304d2b6142f7f561dfdf86562 = L.polyline(
+                [[-9.65481550998291, -65.7302143941698], [-9.65454904039503, -65.7274698302998]],
+                {"bubblingMouseEvents": true, "color": "#cccccc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#cccccc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_296b753304d2b6142f7f561dfdf86562.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO VISTA ALEGRE DO ABUNÃ - RUA JOÃO BORTOLOZZO, Ref: S09.23.C, Convênio: 929570/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ac2b29d67b14707d68a59492d035b0ec = L.polyline(
+                [[-9.65390336321163, -65.7302975627719], [-9.65377012808322, -65.7283223084715]],
+                {"bubblingMouseEvents": true, "color": "#cccccc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#cccccc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_ac2b29d67b14707d68a59492d035b0ec.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO VISTA ALEGRE DO ABUNÃ - RUA ALBERTO LOEBLENN, Ref: S09.23.C, Convênio: 929570/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_48a399bb92afd9aa3f8dd45a299fa653 = L.polyline(
+                [[-9.65311420052882, -65.7303391470729], [-9.65312444940668, -65.7284262692242]],
+                {"bubblingMouseEvents": true, "color": "#cccccc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#cccccc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c48688db18f4aa6c8c3422e67f0f875d);
+        
+    
+            poly_line_48a399bb92afd9aa3f8dd45a299fa653.bindTooltip(
+                `<div>
+                     PAVIMENTAÇÃO VISTA ALEGRE DO ABUNÃ - RUA JOSÉ FERREIRA, Ref: S09.23.C, Convênio: 929570/2022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
